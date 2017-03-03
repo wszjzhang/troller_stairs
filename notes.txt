@@ -1,0 +1,14 @@
+Sat Feb  6 14:18:05 CST 2016
+
+### Step 1: traverse the matrix and find position of gold ###
+    1) study graph traversal: leetcode 130, 200, 286 and Treasure Hunting
+    2) Troll traverse the matrix and find treasure position
+        (1) left up right down (travesable tile in list, search 1 round ignore visited, second round keep previous direction? ! use DFS, stepback stack)
+        (2) Javascript save cell information as static objects : tuple as key? coords as name cell info as value
+        (3) store gold position in gold.row, gold.col
+
+### Step 2: build stacks and get treasure ###
+    1) find 7 tiles connnecting to gold  
+    2) sort all stack tiles on distance to 1st stair    
+    3) move nearest blocks to build stairs 
+
